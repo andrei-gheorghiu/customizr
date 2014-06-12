@@ -416,7 +416,7 @@ class TC_init {
       * QTranslate
       * Credits : @acub, http://websiter.ro
       */
-      if ( current_theme_supports( 'qtranslate' ) && is_plugin_active('qtranslate/qtranslate.php') ) {
+      if ( current_theme_supports( 'qtranslate' ) && (is_plugin_active('qtranslate/qtranslate.php') || is_plugin_active('mqtranslate/mtranslate.php')) {
         //outputs correct urls for current language : in logo, slider
         add_filter( 'tc_slide_link_url' , 'tc_url_lang' );
         add_filter( 'tc_logo_link_url' , 'tc_url_lang');
